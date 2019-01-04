@@ -1,6 +1,6 @@
 package com.datastructure.demo.Tree;
 
-
+//每次main函数都写在实现里 其实应该讲class类与main函数分开到两个文件 在写散列的时候会注意这个问题
 //AVL树的基本实现 重点是balance(t)的调用与实现
 // 另一个重点是insert方法与remove方法不同的方法实现的
 // remove调用balance
