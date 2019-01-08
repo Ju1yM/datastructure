@@ -5,6 +5,9 @@ package com.datastructure.demo.Tree;
 // 另一个重点是insert方法与remove方法不同的方法实现的
 // remove调用balance
 // insert另一个直接用x.compareTo判断新插入的节点在哪里 从而判断需要左旋还是右旋
+// 单旋转 如果是右旋  k2         这种情况 那么旋转之后k2的又子树仍是Z  k1的左子树仍是X  由于Y介于k1k2之间 放在k2的左子树  类似重力下垂 k2换掉了Y
+//                k1    Z
+//  X(X高于一层)     Y
 public class AVLTree<T extends Comparable<? super T>> {
     public static class AVLNode<T> {
         T element;
